@@ -1,0 +1,2 @@
+[global.databases]
+derive_db = { url = "postgres://postgres:postgres@localhost/postgres" }

@@ -1,0 +1,17 @@
+[package]
+name = "derive-backend"
+version = "1.0.0"
+authors = ["pxjohnny <johnny@perimeterx.com>"]
+edition = "2018"
+
+[dependencies]
+rocket = { version = "0.5.0-rc.1", features = ["json"] }
+diesel = { version = "1.4.5", features = ["postgres"] }
+dotenv = "0.15.0"
+failure = {version = "0.1.8", features = ["derive"] }
+serde = { version = "1.0.123", features = ["derive"] }
+
+[dependencies.rocket_sync_db_pools]
+version = "0.1.0-rc.1"
+default-features = false
+features = ["diesel_postgres_pool"]
